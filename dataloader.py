@@ -37,7 +37,7 @@ class MaizeDiseaseClassification(Dataset):
         image = image.resize(self.target_img_size, Image.BILINEAR)
         if self.transforms:
             image = self.transforms(image)
-        return image, label
+        return image, label, image_name
 
 from torch.utils.data import DataLoader
 
