@@ -62,7 +62,6 @@ def get_dataloader(root_path, label_mapping, img_size, csv_file_path, transforms
 
     return dataloader
 
-
 def main():
     transform_pipeline = transforms.Compose([
         transforms.ToTensor(),
@@ -95,7 +94,6 @@ def main():
         print(f"Labels batch shape: {labels.shape}")  
         print(f"Labels: {labels}")
         break
-
 
 if __name__ == "__main__":
     main()        
